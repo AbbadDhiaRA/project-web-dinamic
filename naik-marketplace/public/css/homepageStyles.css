@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: #f5f5f5;
+  padding: 64px 32px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-tag {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 72px;
+  line-height: 0.95;
+  letter-spacing: 2px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.hero-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-solid {
+  padding: 13px 28px;
+  background: #111;
+  color: #fff;
+  border: 1.5px solid #111;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.btn-outline {
+  padding: 13px 28px;
+  background: transparent;
+  color: #111;
+  border: 1.5px solid #111;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.hero-right {
+  flex: 1;
+  position: relative;
+  max-width: 480px;
+}
+
+.hero-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  border: 1.5px solid #111;
+  border-radius: 4px;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.hero-pill {
+  position: absolute;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 2px;
+}
+
+.hero-pill.top {
+  top: -12px;
+  left: 24px;
+}
+
+.hero-pill.bot {
+  bottom: -12px;
+  right: 24px;
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+}
+
+.section {
+  padding: 56px 32px;
+}
+
+.section-alt {
+  background: #fafafa;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.section-head h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  color: #111;
+}
+
+.section-head a {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.cat-card {
+  padding: 22px 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+
+.cat-card:hover {
+  border-color: #111;
+  background: #f5f5f5;
+}
+
+.cat-icon {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cat-line {
+  width: 24px;
+  height: 2px;
+  background: #111;
+  margin: 0 auto 8px;
+}
+
+.cat-name {
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.prod-card {
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+
+.prod-card:hover {
+  border-color: #111;
+}
+
+.prod-img {
+  aspect-ratio: 1;
+  background: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+
+.prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s;
+}
+
+.prod-card:hover .prod-img img {
+  transform: scale(1.05);
+}
+
+.prod-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+.badge-new {
+  background: #111;
+  color: #fff;
+}
+
+.badge-used {
+  background: #fff;
+  color: #111;
+  border: 1px solid #111;
+}
+
+.prod-info {
+  padding: 14px;
+}
+
+.prod-name {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prod-price {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.prod-city {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.banner-wrap {
+  padding: 0 32px 56px;
+}
+
+.banner {
+  background: #111;
+  color: #fff;
+  padding: 36px 48px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.banner-sub {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.banner-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.banner-desc {
+  font-size: 13px;
+  color: #888;
+}
+
+.btn-banner {
+  padding: 13px 28px;
+  background: #fff;
+  color: #111;
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.pop-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color .15s;
+}
+
+.pop-card:hover {
+  border-color: #111;
+}
+
+.pop-rank {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  color: #e8e8e8;
+  flex-shrink: 0;
+  width: 32px;
+  line-height: 1;
+}
+
+.pop-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  flex-shrink: 0;
+}
+
+.pop-name {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.pop-price {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.pop-meta {
+  font-size: 11px;
+  color: #999;
+}
+
+.pop-cond {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  margin-right: 4px;
+}
+
