@@ -170,9 +170,67 @@ Keuntungan penggunaan URL friendly:
 
 Penerapan MVC pada website NAIK juga memudahkan pengembangan fitur baru karena setiap komponen memiliki tanggung jawab yang jelas dan terpisah.
 
-
-
-
 ## Tujuan Pengembangan
 
 Website NAIK dibuat sebagai simulasi marketplace sepatu yang menerapkan konsep autentikasi pengguna, pengelolaan produk, pencarian data menggunakan SQL LIKE, serta simulasi transaksi dan pengiriman barang dalam lingkungan web berbasis PHP.
+
+
+## Instalasi dan Konfigurasi Database
+
+Sebelum menjalankan aplikasi, pastikan web server (XAMPP/Laragon) dan MySQL telah aktif.
+
+### 1. Membuat Database
+
+Buat database baru dengan nama:
+
+```sql
+CREATE DATABASE naik_marketplace;
+```
+
+Atau melalui phpMyAdmin:
+
+1. Buka phpMyAdmin.
+2. Pilih menu **New**.
+3. Masukkan nama database **naik_marketplace**.
+4. Klik **Create**.
+
+### 2. Import Database
+
+Setelah database berhasil dibuat:
+
+1. Pilih database **naik_marketplace**.
+2. Buka tab **Import**.
+3. Pilih file **naik_marketplace.sql** yang tersedia pada folder proyek.
+4. Klik **Import**.
+5. Tunggu hingga proses import selesai.
+
+### 3. Konfigurasi Koneksi Database
+
+Sesuaikan konfigurasi database pada file koneksi aplikasi:
+
+```php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "naik_marketplace";
+```
+
+Pastikan nama database yang digunakan adalah:
+
+```text
+naik_marketplace
+```
+
+### 4. Menjalankan Aplikasi
+
+1. Letakkan folder proyek pada direktori web server (htdocs atau www).
+2. Aktifkan Apache dan MySQL.
+3. Buka browser.
+4. Akses aplikasi melalui URL:
+
+```text
+http://localhost/naik-marketplace
+```
+
+Aplikasi siap digunakan.
+
